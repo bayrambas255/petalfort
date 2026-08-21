@@ -1,0 +1,72 @@
+name: Petalfort support request
+description: Report a bug, accessibility problem, or incorrect product information in English.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Petalfort. This report will be public.
+
+        Do not include your name, email, device serial number, playtest report, screenshots with personal information, or any other sensitive or confidential information.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public-report confirmation
+      options:
+        - label: I understand this report is public and I have removed personal, sensitive, and confidential information.
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Gameplay or progress
+        - Interface or localization
+        - Accessibility
+        - Audio or haptics
+        - Privacy or support information
+        - Other technical problem
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Petalfort version
+      description: Find this in Petalfort Settings. Do not enter a device serial number.
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: iPhone model and iOS version
+      placeholder: "iPhone 16, iOS 26.0"
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Affected mission or screen
+      placeholder: "Mission or screen name"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use a short, numbered list.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected and actual result
+      placeholder: "Expected: ... Actual: ..."
+    validations:
+      required: true

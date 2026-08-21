@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bayrambas255.github.io/petalfort/sitemap.xml
